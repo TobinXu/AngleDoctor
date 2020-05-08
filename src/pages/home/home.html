@@ -1,0 +1,55 @@
+<ion-header class="primary-bg" no-border>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-bg">
+  <ion-grid class="pins">
+    <span class="pins-title">服药管理</span>
+    <ion-row>
+      <ion-col col-6 *ngFor="let medic of medics" class="pin">
+        <img [src]="medic.imageUrl">
+        <span class="img-title">{{medic.name}}:</span>
+        <span class="img-title2">{{medic.usage}}</span>
+      </ion-col>
+      <ion-col class="pin">
+        <div class="empty">
+          <img src="../assets/imgs/home/add.png">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="pins">
+      <span class="pins-title">费用管理</span>
+      <ion-row>
+        <ion-col col-6 *ngFor="let cost of costs" class="pin">
+          <img [src]="cost.imageUrl">
+          <span class="img-title">{{cost.title}}:</span>
+          <span class="img-title2">{{cost.desc}}</span>
+        </ion-col>
+        <ion-col class="pin">
+          <div class="empty">
+            <img src="../assets/imgs/home/add.png">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="pins">
+        <span class="pins-title">我的检测</span>
+        <ion-row>
+          <ion-col col-6 *ngFor="let detect of detects" class="pin">
+            <img [src]="detect.imageUrl">
+            <span class="img-title">{{detect.title}}:</span>
+            <span class="img-title2">{{detect.notification}}</span>
+          </ion-col>
+          <ion-col class="pin">
+            <div class="empty">
+              <img src="../assets/imgs/home/add.png">
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

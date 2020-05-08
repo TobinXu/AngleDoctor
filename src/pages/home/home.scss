@@ -1,0 +1,49 @@
+page-home {
+    .pins{
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+        column-count: 2;
+        background-color: #fff;
+    }
+
+    .pins-title{
+        padding: 2%;
+        font-size: 16px;
+        color: color($colors, primary);
+        font-weight: bold;
+        overflow: hidden;
+    }
+    
+    .pin{
+        padding:1.5% 2.5%;
+        position: relative;
+    }
+
+    img {
+        border-radius: 5%;
+        filter:alpha(Opacity=80);-moz-opacity:0.7;opacity: 1;
+    }
+
+    .empty{
+        border: 3px solid color($colors, primary);
+        border-radius: 5%;
+        padding: 8% 25%;
+    }
+    .img-title{
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .img-title2{
+        position: absolute;
+        top: 45%;
+        left:20%;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+    }
+}

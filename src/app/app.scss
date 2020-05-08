@@ -1,0 +1,14 @@
+.primary-bg {
+    .toolbar {
+        .toolbar-background {
+            background-color: color($colors, primary);
+        }
+        .toolbar-title {
+            color: color($colors, light);
+            text-align: center;
+        }
+    }
+}
+.page-bg {
+    background-color: color($colors, paper);
+}
